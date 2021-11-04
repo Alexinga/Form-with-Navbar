@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Form Builder</title>
+</head>
+
+<body>
+    <header id="home">
+        <nav class="navbar">
+            <h1>Logo</h1>
+            <ul class="navbar-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Client</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="searchbar">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="heart">
+                <i class="fas fa-heart"></i>
+            </div>
+        </nav>
+    </header>
+    <main id="landing-page">
+        <div id="overlay"></div>
+        <div class="search hidden">
+            <input type="search" name="search" placeholder="Search Here">
+            <i class="fas fa-search"></i>
+        </div>
+        <ul class="navbar-links-2 hidden">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Client</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="heart-modal hidden">
+            <button class="close">&times;</button>
+            <h1>Hello Sign Up Now</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, officiis! Ullam cupiditate hic optio sed harum, ducimus obcaecati ipsum iure fugiat minus iusto, vitae blanditiis reprehenderit tempore tempora aliquam eligendi? Vero id laboriosam aliquam? Possimus inventore enim, ab porro minus aspernatur vel dolorem voluptas sint eos, delectus, nobis non. Aperiam?</p>
+            <div class="btns">
+                <button class="btn">Sign up</button>
+                <button class="btn">Sign in</button>
+            </div>
+        </div>
+    </main>
+    <section id="form">
+        <div class="heading">
+            <h2>Join our FORM for any updates</h2>
+        </div>
+        <form class="form-container" action="/" method="GET">
+            <div id="error"></div>
+            <div class="form-control">
+                <label for="firstName">First Name</label>
+                <input type="text" id="name" placeholder="Enter Your First Name">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder="Enter Your Last Name">
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Your Email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Your Password">
+            </div>
+            <p>By clicking Join now, You agree to the Form <strong>User Agreement, Privacy Policy,</strong> and <strong>Cookie Policy</strong></p>
+            <div class="form-control">
+                <button class="btn btn-form" type="submit">Join Now</button>
+            </div>
+            <p>Already a Form Member? <strong>Sign In</strong></p>
+        </form>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
